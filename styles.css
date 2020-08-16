@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Ubuntu');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+  background-image: url('https://source.unsplash.com/1600x900/?violin, guitar, cello, viola');
+  background-size: cover;
+  margin: 0 10px;
+}
+
+.payment{
+  background: rgb(209, 169, 140);
+
+  max-width: 360px;
+  margin: 80px auto;
+  height: auto;
+  padding: 35px;
+  padding-top: 70px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.payment h2{
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  color: #0d3c61;
+}
+
+.form .label{
+  display: block;
+  color: #555555;
+  margin-bottom: 6px;
+}
+
+.input{
+  padding: 13px 0px 13px 25px;
+  width: 100%;
+  text-align: center;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  outline: none;
+  font-size: 16px;
+  color: #555555;
+}
+
+.card-grp{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-item{
+  width: 48%;
+}
+
+.space{
+  margin-bottom: 20px;
+}
+
+.icon-relative{
+  position: relative;
+}
+
+.icon-relative .fas,
+.icon-relative .far{
+  position: absolute;
+  bottom: 12px;
+  left: 15px;
+  font-size: 20px;
+  color: #555555;
+}
+
+.btn{
+  margin-top: 40px;
+  background: brown;
+  padding: 12px;
+  text-align: center;
+  color: #f8f8f8;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.payment-logo{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  background: #f8f8f8;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  text-align: center;
+  line-height: 85px;
+}
+
+.payment-logo:before{
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 90px;
+  height: 90px;
+  background: brown;
+  border-radius: 50%;
+}
+
+.payment-logo p{
+  position: relative;
+  color: #f8f8f8;
+  font-family: 'Baloo Bhaijaan', cursive;
+  font-size: 58px;
+}
+
+.logo{
+  display:flex;
+  width: 30%;
+}
+.logo img{
+  width: 30%;
+  border: 3px solid white;
+  border-radius: 50px;
+  
+}
+.navbar{
+  
+  display:flex;
+  
+  background-color: black;
+  position: sticky;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  cursor: pointer;
+
+}
+.navlist{
+  width: 70%;
+  display: flex;
+  padding-top: 1em;
+  justify-content: center;
+}
+.navlist li{
+  list-style: none;
+ padding: 14px 14px;
+}
+.navlist li a{
+  text-decoration: none;
+  color: white;
+  
+}
+.navlist li a:hover{
+  text-decoration: none;
+  color: plum;
+  
+}
+.rightnav{
+  width: 30%;
+  text-align: right;
+  
+}
+
+#top{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  size: 50px;
+  color: whitesmoke;
+}
+#search{
+  
+  font-size: 19px;
+  border: 2px solid grey;
+  border-radius: 9px;
+}
+.btn{
+  padding: 8px 20px;
+  margin: 7px 2px;
+  letter-spacing: 0.2em;
+  border: 2px solid white;
+  border-radius: 8px;
+  background: none;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+.btn a{
+  text-decoration: none;
+  color: white;
+}
+.btn a:hover{
+  text-decoration: none;
+  color: plum;
+  
+}
+
+
+@media screen and (max-width: 420px){
+  .card-grp{
+    flex-direction: column;
+  }
+  .card-item{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .btn{
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 805px){
+  .navlist{
+      flex-direction: column;
+      justify-content: center;
+  }
+  .navbar{
+      flex-direction: column;
+      justify-content: center;
+      height: 500px;
+      transition: all 0.7s ease-out;
+
+  }
+  .rightnav{
+      text-align: center;
+  }
+
+  
+  
+  .visnav{
+      opacity: 0;
+  }
+
+  .heightnav{
+      height: 70px;
+  }
+  .burger{
+      display: block;
+  }
+  .mainbox{
+      flex-direction: column-reverse;
+  }
+  .mainbox2{
+      flex-direction: column-reverse;
+  }
+  .notesmain{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      
+  }
+  .notestxthalf{
+      text-align: center;
+  }
+  .notesimg img{
+      
+      width: 50%;
+      height: 50%;
+      border: 4px solid grey;
+      display: block;
+      margin: auto;
+      
+  }
+}

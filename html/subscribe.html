@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="../jquery-3.5.1.min.js">
+    <link rel="stylesheet" href="subs.js">
+    <link rel="stylesheet" href="subs.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="20700874251-8klmjiieda09i7fn55kabgnbfte2qg8a.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer> </script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    <div class="data">
+        <p>Profile details</p>
+        <img id="pic" class="img-circle" width="100px" height="100px">
+        <p>email address</p>
+        <p id="email" class="alert alert-danger"></p>
+        <button onclick="signOut()" class="btn btn-danger">Sign out</button>
+    </div>
+</body>
+</html>

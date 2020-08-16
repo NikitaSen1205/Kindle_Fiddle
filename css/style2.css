@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+  }
+body{
+    background-image: url('../img/bgforcontcat.jpg');
+    background-size: cover;
+    background-position: center;
+    
+}
+.batch{
+    display: flex;
+    color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column/., ;
+}
+
+.contactpg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: ivory;
+    
+    flex-direction: column;
+    
+}
+
+.onlinedes{
+    display: flex;
+    text-align: center;
+    color: ivory;
+    flex-direction: column;
+    
+}
+
+.pay{
+    max-width: 50%;
+    
+    font-size: 20px;
+}
+
+.selectbatch{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.batchoption li{
+    list-style: none;
+    font-family: sans-serif;
+    color: whitesmoke;
+    font-size: 20px;
+    margin: 20px;
+    padding: 2px;
+}
+.batchdes{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    color: lightblue;
+    font-size: 200%;
+    padding: 20px;
+    margin: 20px 15px;
+    text-align: center;
+}
+
+.border{
+    border: 2px solid grey;
+    padding: 1em 1em;
+}
+
+.logo{
+    display:flex;
+    width: 30%;
+}
+.logo img{
+    width: 30%;
+    border: 3px solid white;
+    border-radius: 50px;
+    
+}
+.navbar{
+    
+    display:flex;
+    background: black;
+    margin-bottom: 3em;
+    position: sticky;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    cursor: pointer;
+
+}
+.navlist{
+    width: 70%;
+    display: flex;
+    padding-top: 1em;
+    justify-content: center;
+}
+.navlist li{
+    list-style: none;
+   padding: 14px 14px;
+}
+.navlist li a{
+    text-decoration: none;
+    color: white;
+    
+}
+.navlist li a:hover{
+    text-decoration: none;
+    color: plum;
+    
+}
+.rightnav{
+    width: 30%;
+    text-align: right;
+    
+}
+#search{
+    
+    font-size: 19px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+.btn {
+    padding: 20px 20px;
+    margin: 7px 2px;
+    letter-spacing: 0.2em;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+    
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+.btn a:hover{
+    text-decoration: none;
+    color: plum;
+    
+}
+.smlbtn{
+    padding: 8px 20px;
+    margin: 7px 2px;
+    letter-spacing: 0.2em;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    cursor: pointer;
+    color: white;
+}
+.smlbtn a{
+    text-decoration: none;
+    color: white;
+}
+.smlbtn a:hover{
+    text-decoration: none;
+    color: plum;
+    
+}
+@media only screen and (max-width: 805px){
+    .navlist{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+        height: 500px;
+        transition: all 0.7s ease-out;
+
+    }
+    .rightnav{
+        text-align: center;
+    }
+
+    
+    
+    .visnav{
+        opacity: 0;
+    }
+
+    .heightnav{
+        height: 70px;
+    }
+    .burger{
+        display: block;
+    }
+    .mainbox{
+        flex-direction: column-reverse;
+    }
+    .mainbox2{
+        flex-direction: column-reverse;
+    }
+    .notesmain{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+    .notestxthalf{
+        text-align: center;
+    }
+    .notesimg img{
+        
+        width: 50%;
+        height: 50%;
+        border: 4px solid grey;
+        display: block;
+        margin: auto;
+        
+    }
+}
